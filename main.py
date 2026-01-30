@@ -20,3 +20,7 @@ print("Hello my name is",name,"and my age is",age)
 # or 
 
 print(f"my name is {name} and my age is {age}")
+
+# Question time
+name1=int(input("hello what is your age"))
+print(name1)
