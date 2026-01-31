@@ -1,13 +1,13 @@
-
+"""
 #variables
 print("Start our data science journey")
 
-"""data types"""
+# data types
 
 # numbers
 
 
-"""a = 12
+a = 12
 b = 12.865
 c = 12/3
 d = 12j # only can use j here not any other like x and y etc etc
@@ -30,8 +30,8 @@ print(10**10)
 print(32%5)
 print(32//5)
 print(32/5)
-"""
-"""aa=4
+
+aa=4
 bb=12/3
 print(aa==bb,"hi1")
 
@@ -47,11 +47,11 @@ print(ord("A"))
 print(chr(65))
 
 print("A" > "B")
-"""
+
 # Some Questions on Conditional 
 #  Q1. Accept two numbers and print the greatest between them.
 
-"""a= int(input("Enter Ist Number"))
+a= int(input("Enter Ist Number"))
 b= int(input("Enter 2nd Number"))
 
 if a>b:
@@ -59,7 +59,7 @@ if a>b:
     elif a<b:
      print(f"the greater number is {b}")
 else:
-    print("Numbers are same")"""
+    print("Numbers are same")
 # Q2. Accept the gender from the user as char and print the 
 #respective greeting message 
 #Ex - Good Morning Sir (on the basis of gender)
@@ -107,3 +107,36 @@ elif year % 4 != 0:
 else:
     print("Enter valid year")
 
+# Range and for loop
+
+a=range(1,20,1)
+for i in a:
+    print(i)
+    # or
+
+    for i in range(2,35,2):
+        print(i)
+
+# go from 17 to -3
+
+for i in range(17,-4,-1):
+    print(i)
+
+
+    # lets print a table of 5 
+for i in range(1,11,1):
+    print(f"5 x {i} = {5*i}")
+"""
+# Loops for strings 
+
+a = "Danish Nisar Kumar"
+
+print(len(a)) # to know the length of our string
+
+for i in range(0,len(a),1):
+    print(a[i])
+
+# or 
+
+for i in a:
+    print(i)
