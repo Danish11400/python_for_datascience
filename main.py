@@ -218,7 +218,7 @@ n = int(input("Enter the number:- "))
 for i in range(1,n+1,1):
     if n%i==0:
         print(i)
-"""
+
 
 # Q8 Accept a number and check if it a perfect number or not. 
 #A number whose sum of factors is equal to the number itself 
@@ -234,3 +234,63 @@ if perfect_no==n*2:
          print("yes it is a perfect no.")
 else:
          print("no it is not perfect no.")
+
+# Q9 Check wether the number is prime or not
+
+n = int(input("Enter Your No:- "))
+prime_checker=True
+
+if n >0:
+    for i in range(2,n,1):
+        if n%i==0:
+            prime_checker=False
+            break
+    if prime_checker:
+        print(f"Yes! {n} is prime number")
+    else:
+        print(f"No! {n} is not a prime number")
+ 
+
+    
+else:
+    print("Enter a valid natural number")
+
+# Method 2nd 
+
+n = int(input("Enter Your No:- "))
+count=0
+if n >0:
+    for i in range(1,n+1,1):
+        if n%i==0:
+            count=count+1 # eg. n=3 factors 1,3 when 1 came count becomes 0=0+1-->1 and then when 3 came count becomes 1=1+1 --> 2
+    if count==2:
+        print(f"Yes! {n} is prime number")
+    else:
+        print(f"No! {n} is not a prime number")
+else:
+    print("Enter a valid natural number")
+
+# Q10 Reverse a string without using in build functions.dont use .reverse and a[::-1] use with for loop 
+
+a = "Danish Nisar Kumar"
+b=""
+
+for i in range(len(a)-1,-1,-1):
+    print(a[i])
+    b+=a[i]
+print(b)
+
+# q11 Check string is Pallindrome or not
+
+
+a= "madam"
+b=""
+for i in range(len(a)-1,-1,-1):
+    print(a[i])
+    b+=a[i]
+if a==b:
+    print("yes palindrome")
+else:
+    print("not a palindrome")
+"""
+# lec at 3 hrs 35 min
