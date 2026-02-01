@@ -126,7 +126,7 @@ for i in range(17,-4,-1):
     # lets print a table of 5 
 for i in range(1,11,1):
     print(f"5 x {i} = {5*i}")
-"""
+
 # Loops for strings 
 
 a = "Danish Nisar Kumar"
@@ -140,3 +140,97 @@ for i in range(0,len(a),1):
 
 for i in a:
     print(i)
+
+
+# Question from the for loop
+# Q1 Accept an integer and Print hello world n times
+
+a = range(1,int(input("Enter the Number:-"))+1,1)
+
+for i in a:
+   print(f"{i}:Hello World")
+
+# Q2 Print natural number up to n
+
+n = int(input("Enter the number: "))
+
+if n > 0:
+    for i in range(1, n + 1):
+        print(i)
+else:
+    print("Enter a valid natural number (greater than 0)")
+
+# Q3 Reverse for loop. Print n to 1
+
+n = int(input("Enter the number: "))
+
+if n >0 :
+    for i in range(n,0,-1):
+        print(i)
+
+    else: print("invalid no.")
+
+
+# Q4 Sum up to n terms
+
+n = int(input("Enter the number:- "))
+sum=0
+for i in range(1,n+1):
+    sum +=i
+print(sum)
+
+# Q5 Factorial of a number
+
+n = int(input("Enter the number:- "))
+factorail=1
+for i in range(n,1,-1):
+     factorail*=i
+print(factorail)
+
+# Q6 Print the sum of all even & odd numbers in a range separately
+
+n = int(input("Enter the number:- "))
+sum_even=0
+sum_odd=0
+
+if n> 0:
+    
+    for i in range(1,n+1):
+         if i % 2 == 0:
+            sum_even += i
+         else:
+            sum_odd += i
+
+    print(f"Sum of even numbers = {sum_even}")
+    print(f"Sum of odd numbers  = {sum_odd}")
+
+else:
+    print("Enter a natural number (greater than 0).")
+    
+
+
+#Q7 Print all the factors of a number
+
+
+
+n = int(input("Enter the number:- "))
+
+for i in range(1,n+1,1):
+    if n%i==0:
+        print(i)
+"""
+
+# Q8 Accept a number and check if it a perfect number or not. 
+#A number whose sum of factors is equal to the number itself 
+#Ex -  6 = 1, 2, 3 = 6
+n = int(input("Enter the number:- "))
+
+perfect_no=0
+
+for i in range(1,n+1,1):
+    if n%i==0:
+        perfect_no+=i
+if perfect_no==n*2:
+         print("yes it is a perfect no.")
+else:
+         print("no it is not perfect no.")
