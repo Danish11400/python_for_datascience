@@ -56,8 +56,8 @@ b= int(input("Enter 2nd Number"))
 
 if a>b:
     print(f"the greater number is {a}")
-    elif a<b:
-     print(f"the greater number is {b}")
+elif a<b:
+    print(f"the greater number is {b}")
 else:
     print("Numbers are same")
 # Q2. Accept the gender from the user as char and print the 
@@ -364,7 +364,7 @@ if reverse_number==original_number:
     print(f"Yes! {original_number} is pallindromic number")
 else:
     print(f"No! {original_number} is not pallindromic number")
-"""
+
 # Create a random number guessing game with python
 
 import random
@@ -393,5 +393,44 @@ while count > 0:
          if user_guess_number <0 or user_guess_number >10:
                  print("Enter number between 0 to 10 only 🥰")
 
+ # Functions 
+
+ # make a function just like inbuild print() function
+
+def print2(write): # function name and write is one parameter
+    print(write)
+
+print2("hello brother") # calling a function
 
 
+# Functions and parametrs
+
+def sum(a,b):
+    print(a+b)
+
+sum(12,12)
+
+def divide(a,b):
+    print(a/b)
+
+divide(b=2,a=10) # already passe arguments and i give opposite also b ist and then a 2nd those are called keyword arguments
+
+def multiply(a=1,b=2): # if i didnt pass arguments in calling those default values can be executed
+    print(a*b)
+multiply()
+
+# Return
+
+def sub(a,b):
+    return a-b # return do it return the value that function give us to that line or pace where we call it eg we call it at line 426 so if we print calling the answer will print or we can keep that value store in variables
+print(sub(2,3))
+
+# return another example
+
+def greet():
+    return "asalamuaalikum"
+greeting_in_islam=greet() # here we store the value in variable in greeting_in_islam
+
+print(greeting_in_islam,"walikumasalam")
+"""
+# 4 hr and 30 min lect
