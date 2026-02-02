@@ -292,5 +292,106 @@ if a==b:
     print("yes palindrome")
 else:
     print("not a palindrome")
-"""
+
 # lec at 3 hrs 35 min
+# Count all letters, digits, and special symbols from a given string Given: str1 = "P@#yn26at^&i5ve" 
+ #Expected Outcome: 
+ #Total counts of chars, digits, and symbols 
+ #Chars = 8 
+ #Digits = 3 
+ #Symbol = 4
+
+a = "Chysr$^&#7285v#$72bdg)(2_)"
+
+char=0
+digit=0
+symbol=0
+
+for i in a:
+    if i.isdigit():
+        digit+=1
+    elif i.isalpha():
+        char+=1
+
+    else:
+        symbol+=1
+print(f"symbols are {symbol}, alphabets are {char}, and digits are {digit} in this string")
+
+# While loop
+
+a=1 # its like the i=x in js ist one in loop 
+while a<=30: # condition runs when condition is true stops when condition became false --> 2nd thing in js look a like
+     print(a)
+     a+=1 # its like i++ in js to make aur work 
+
+# Separate each digit of a number and print it on the new line
+
+a=int(input("Enter any number:-"))
+while a>0:
+    print(a % 10) #---> that means 12345 remender when divided by 10 qutotent = 1234 and remender is 5 
+    a= a // 10 # ----> means 12345 divides float by 10 means q = 1234.5 anf float divide makes decimal free so q ----> 1234 and now new number is 1234 and it runs till new number is becomes zero according to our condition 
+
+
+# accept a number and reverse it
+
+a=int(input("Enter any number:-"))
+
+reverse_number=0
+
+while a>0:
+    reverse_number=reverse_number * 10 + a % 10 # eg 653 is no and we have to make it 356 we can do like -------> 0=0*10 + 3= 3
+                        # and then folat divide seperates 3 the again 3=3*10 + 5= 35
+                        # and again float division extracts 5 then ----> 35=35*10 + 6 = 356
+    a = a // 10
+print(reverse_number)
+
+
+# Accept a number and check if it is a pallindromic number (If number and its reverse are equal)
+
+a=int(input("Enter any number:-"))
+
+
+reverse_number=0
+original_number=a # making copy of original number in himself
+
+while a>0:
+    reverse_number=reverse_number * 10 + a % 10 # e.g 653 is no and we have to make it 356 we can do like -------> 0=0*10 + 3= 3
+                        # and then folat divide seperates 3 the again 3=3*10 + 5= 35
+                        # and again float division extracts 5 then ----> 35=35*10 + 6 = 356
+    a = a // 10
+
+if reverse_number==original_number:
+    print(f"Yes! {original_number} is pallindromic number")
+else:
+    print(f"No! {original_number} is not pallindromic number")
+"""
+# Create a random number guessing game with python
+
+import random
+number = random.randint(0,10) # 1 to 10 include 10 randint ---> is function to mean random integer
+
+print(number)
+
+count = 3
+
+while count > 0:
+         user_guess_number= int(input("Enter your single digit number"))
+         if user_guess_number <0 or user_guess_number >10:
+                 print("Enter number between 0 to 10 only 🥰")
+                 continue
+
+         elif user_guess_number!= number:
+                 count-=1
+                 print(f"Wrong guess! only {count} life remaining") 
+                 if count==0:
+                         print("You lose the game 🥲  the number was", number)
+                         break
+                
+         elif user_guess_number== number:
+                 print("yes correct guess you won the game 🎆")
+                 break
+         if user_guess_number <0 or user_guess_number >10:
+                 print("Enter number between 0 to 10 only 🥰")
+
+
+
