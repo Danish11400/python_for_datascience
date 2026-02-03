@@ -432,5 +432,25 @@ def greet():
 greeting_in_islam=greet() # here we store the value in variable in greeting_in_islam
 
 print(greeting_in_islam,"walikumasalam")
+
+# Data structures (DS)
+
+# 1-----> List e.g like arrays
+
+a=[1,2,4,755,33,6,43,54.42,True,"Hello",print(),"Good"] # we can change the values and other info in ------> i book in page 30!!!!!
+print(a[0:6:1])
+
+print(a[-1:-3:-1]) # from backside starts at -1 means at good and ends at -3 means hello but not include hello and steps -1
+
+
+
+a=[1,43,5,7553,2,340,2.42]
+
+for i in range(0,len(a),1): # acessing index
+    print(a[i])
 """
-# 4 hr and 30 min lect
+a=[1,43,5,7553,2,340,2.42]
+
+for i in a:  # direct access
+    print(i)
+
