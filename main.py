@@ -1,4 +1,4 @@
-"""
+
 #variables
 print("Start our data science journey")
 
@@ -476,4 +476,77 @@ print("hello",count)
 a.reverse()
 print(a)
 
-"""
+
+
+# Questions on list
+
+# Q1 Print positive and negative elements of an List
+
+question_list = [3,-14,-7,-3,2,5,90,-54.37,5,8,]
+
+for i in question_list:
+    if i>0:
+        print(f"{i} is positive")
+    elif i<0:
+        print(f"{i} is negative")
+
+
+
+#Q2 Mean of List elements
+
+question_list = [3,-14,-7,-3,2,5,90,-54.37,5,8]
+
+
+mean=0
+for i in question_list:
+    mean+=i
+print(f"mean of given list is {mean/len(question_list)}")
+
+
+
+# Q3 Find the greatest element and print its index too
+
+question_list = [300,3,-14,-7,-3,2,5,90,-54.37,5,8]
+
+greter_number=question_list[0]
+for i in range(len(question_list)):
+    if question_list[i] > greter_number:
+        greter_number = question_list[i]
+print(f"the greater number is {greter_number} at index number {question_list.index(greter_number)}")
+
+
+
+# Q4 Find the second greatest element
+
+
+# Thats my way to do that question but its bulky what if i have to find 100th largest value i find largest and then remove it from the list then again find largest which ultimately becomes the second largest value 
+
+question_list = [300,3,-14,-7,-3,2,5,90,-54.37,5,8]
+
+greter_number=question_list[0]
+
+
+for i in range(len(question_list)):
+    if question_list[i] > greter_number:
+        greter_number = question_list[i]
+question_list.pop(question_list.index(greter_number))
+
+
+
+second_largest_number = question_list[0]
+
+for i in range(len(question_list)):
+    if second_largest_number < question_list[i]:
+        second_largest_number=question_list[i]
+print(f"second largest number in the list is {second_largest_number}")
+
+
+
+# Q4 Find the second greatest element
+
+# Now its sir's way of doing the question bt i will write code of my own just get the idea and i think its best wy to get the answer -----> so thye approach is that take two variables largest and second largest then value at index 0 = both variables then loop runs if loop find big value than largest then it becomes the largest and alrady largest becames the second largest value------->
+
+
+question_list = [300,3,-14,-7,-3,2,5,90,-54.37,5,8]
+
+
