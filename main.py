@@ -1,4 +1,4 @@
-
+"""
 #variables
 print("Start our data science journey")
 
@@ -544,9 +544,42 @@ print(f"second largest number in the list is {second_largest_number}")
 
 # Q4 Find the second greatest element
 
-# Now its sir's way of doing the question bt i will write code of my own just get the idea and i think its best wy to get the answer -----> so thye approach is that take two variables largest and second largest then value at index 0 = both variables then loop runs if loop find big value than largest then it becomes the largest and alrady largest becames the second largest value------->
+#  Now its sir's way of doing the question bt i will write code of my own just get the idea 
+# and i think its best wy to get the answer -----> so thye approach is that take
+#  two variables largest and second largest then value at index 0 = both variables then loop runs if loop
+# find big value than largest then it becomes the largest and alrady
+# largest becames the second largest value------->
 
 
-question_list = [300,3,-14,-7,-3,2,5,90,-54.37,5,8]
+question_list = [15,3,-14,-7,-3,2,38,5,90,-54.37,5,8]
+
+largest_value=question_list[0]
+second_largest_value=question_list[0]
+
+for i in range(len(question_list)):
+    if question_list[i] > largest_value:
+        second_largest_value = largest_value
+        largest_value = question_list[i]
+    elif question_list[i] > second_largest_value: # to prevent if second largest was last index of the list then largest reach there but second largest cant ------>
+        second_largest_value = question_list[i]
+
+print(second_largest_value)
 
 
+
+#Q5 Check if List is sorted or not.
+
+
+question_list = [15,3,-14,-7,-3,2,38,5,90,-54.37,5,8]
+
+
+for i in range(len(question_list)-1): # why -1?? -----> becoz i+1 if i=11 and then i+1 becomes 12 but we dont have index 12 so last element is no need to check becoz it gets already checked in i 
+    if question_list[i] < question_list[i+1]:
+        continue
+    else:
+        print("your list is not sorted")
+        break
+else:
+    print("Your list is sorted ")  # why we write else outside becoz if not sorted runs then loop stops  and says list is not sorted yes !!!! and if not sorted not runs then loop continue to run and not sorted then automatically our ist is sorted then last else runs becoz we already know list is sorted becoz not sorted else dont run so we casually says ohhh not sorted doesnt runs ohh that means list is sorted so ok run list is sorted 🥲...
+    
+"""
