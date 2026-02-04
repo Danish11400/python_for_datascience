@@ -448,9 +448,32 @@ a=[1,43,5,7553,2,340,2.42]
 
 for i in range(0,len(a),1): # acessing index
     print(a[i])
-"""
+
 a=[1,43,5,7553,2,340,2.42]
 
 for i in a:  # direct access
     print(i)
 
+a = [1,3,4,5]
+
+a.append(6) # at last add this
+a.append(7)
+
+a.insert(1,2) # at 1 indec add 2
+
+a.extend([8,9])
+
+a.insert(0,2)
+
+a.remove(2) # where ist 2 came remove that
+
+popped_item=a.pop(3) # at index 3 which value is their you can store that in any variable and that value is removed from the list also
+
+
+count=a.count(5) # how many times 5 repeat in the list
+print("hello",count)
+
+a.reverse()
+print(a)
+
+"""
