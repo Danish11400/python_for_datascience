@@ -695,3 +695,6 @@ for keys, values in a.items():  # here keys and values we can use differnt names
 
 
 # or to find methods of dictonaries and deep copy and shallow copy i will ad ss on the notes page of these...OK!!!!
+
+
+# lec at 6 hr and 4 min
