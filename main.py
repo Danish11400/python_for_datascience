@@ -582,4 +582,116 @@ for i in range(len(question_list)-1): # why -1?? -----> becoz i+1 if i=11 and th
 else:
     print("Your list is sorted ")  # why we write else outside becoz if not sorted runs then loop stops  and says list is not sorted yes !!!! and if not sorted not runs then loop continue to run and not sorted then automatically our ist is sorted then last else runs becoz we already know list is sorted becoz not sorted else dont run so we casually says ohhh not sorted doesnt runs ohh that means list is sorted so ok run list is sorted 🥲...
     
+
+
+# Tuple eg. a = (1,2,3,4)
+
+a = (1,2,3,4,5,"hello",6.6) # only change in tuple and list in list we change any value but in tuple we cant change any value its immutable
+
+# and in tuple only two methods .index() -----> to find index and .count() ------> to find how many times something is in tuple
+
+# we can unpack tuple eg.
+
+a,b,c,d = (1,2,"hello",4)
+
+# Now a =1 b=2 c=hello d=4
+
+print(type(a))  # now type of a----> integer not tuple becoz now it unpacks and a=1 not tuple
+print(type(c))  # Now typeof c ------> string becoz its now equal to "hello"
+
+
+
+# Set e.g ----> a = {1,2,3,4,"hello",5.6}
+
+
+a = {1,2,3,4,"hello",5.6,(10,20,30)} # no duplicates and not ordered----> like a[0], a[1] means not like index acessing  
+
+# And we can store tuples also in set
+print(a)
+
+
+
+a = {1,2,3,4,5}
+b = {4,5,6,7,8}
+
+union_set = a.union(b) # all values of a and b but same shows only once
+print(union_set)
+            # or
+union_set_shortcut = a | b
+print(union_set_shortcut)
+
+
+
+intersection_set = a.intersection(b) # same values
+print(intersection_set)
+            # or
+intersection_set_shortcut = a & b
+print(intersection_set_shortcut)
+
+
+
+difference_set_of_a_wrt_b = a.difference(b)
+print(difference_set_of_a_wrt_b)
+            # or
+difference_set_of_a_wrt_b_shortcut = a - b
+print(difference_set_of_a_wrt_b_shortcut)
+
+
+difference_set_of_b_wrt_a = b.difference(a)
+print(difference_set_of_b_wrt_a)
+            # or
+difference_set_of_b_wrt_a_shortcut = b - a
+print(difference_set_of_b_wrt_a_shortcut)
+
+
+
+symmetric_diff = a.symmetric_difference(b) # shows both a and b differce values
+print(symmetric_diff)
+            # or
+symmetric_diff_shortcut = a ^ b
+print(symmetric_diff_shortcut)
+
+
+
+# Dictonaries eg . a = {1:"hello","name":"danish", "age":18}
+# so in dictionaries is like sets but have keys and values just like
+# objects in js
+
+a = {"greetings":"hello","name":"danish", "age":18,786:"bismillah"}
+
+a["greetings"] = "Assalamuaalikum"  # change key_value not key
+print(a)
+
+a.update({"address":"Okai kulgam"}) # add some key and value in dictionary UPDATING
+print(a)
+
+a["fav_food"] = "beef_biryani" #-----> Look here python says hey there is no key fav_food and it creats that key and if we give value it also then it gives that value to that key also so it is called CREATING  
+print(a)
+
+
+del a[786] # it deletes key and value both key name is 786
+print(a)
+
 """
+
+a = {"greetings":"Assalamuaalikum","name":"danish", "age":18,786:"bismillah"}
+
+for i in a:
+    print(f"now i= key like----> {i} and key_value is a[i] like---->{a[i]}")
+                #or
+print("<-------------------------------------------------------->")
+
+for i in a.values():
+    print(i) # now we can acess direct values only not keys
+
+    #or
+a = {"greetings":"Assalamuaalikum","name":"danish", "age":18,786:"bismillah"}
+  
+for keys, values in a.items():  # here keys and values we can use differnt names like keylal etc , value_khor etc just like js
+
+    print(f"keys{keys} and values {values}")
+
+
+
+
+# or to find methods of dictonaries and deep copy and shallow copy i will ad ss on the notes page of these...OK!!!!
