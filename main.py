@@ -672,7 +672,7 @@ print(a)
 del a[786] # it deletes key and value both key name is 786
 print(a)
 
-"""
+
 
 a = {"greetings":"Assalamuaalikum","name":"danish", "age":18,786:"bismillah"}
 
@@ -696,5 +696,17 @@ for keys, values in a.items():  # here keys and values we can use differnt names
 
 # or to find methods of dictonaries and deep copy and shallow copy i will ad ss on the notes page of these...OK!!!!
 
+"""
 
-# lec at 6 hr and 4 min
+# Q1  Write a Python script to merge two Python dictionaries.
+
+Student_info = {"name":"Danish Nisar","age":18,"course":"Data Science"}
+
+course_info = {1:"python",2:"stastics",3:"Numpy",4:"metabolitics"}
+
+Student_info.update(course_info)
+
+print(Student_info)
+
+
+
